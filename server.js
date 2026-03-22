@@ -13,30 +13,7 @@
 const express    = require('express');
 const cors       = require('cors');
 const bodyParser = require('body-parser');
-const twilio     = require('twilio');{
-  "name": "safeendo-rewards-server",
-  "version": "1.0.0",
-  "description": "SafeEndo Rewards — WhatsApp bot + Google Sheets verification API",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
-  },
-  "dependencies": {
-    "body-parser": "^1.20.2",
-    "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "googleapis": "^144.0.0",
-    "twilio": "^5.3.1"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.0"
-  },
-  "engines": {
-    "node": ">=18.0.0"
-  }
-}
-
+const twilio     = require('twilio');
 const { google } = require('googleapis');
 
 const app  = express();
